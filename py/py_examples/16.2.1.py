@@ -1,0 +1,2 @@
+</> Python
+import timeimport paho.mqtt.clientasmqttbroker="localhost"temperature_topic="home/temperature"humidity_topic="home/humidity"client=mqtt.Client()client.connect(broker, 1883, 60)whileTrue:temperature=25.3humidity=60.0client.publish(temperature_topic, str(temperature))client.publish(humidity_topic, str(humidity))print("Temperature:", temperature)print("Humidity:", humidity)time.sleep(2)
